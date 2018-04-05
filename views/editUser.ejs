@@ -1,0 +1,12 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/users/listUsers">Users</a></li>
+    <li class="breadcrumb-item active">Edit</li>
+</ol>
+<h1 class="display-4">Edit user</h1>
+<form method="post" action="/users/update/<%= user.id %>">
+    <div class="form-group">
+        <label for="name">name</label>
+        <input type="text" name="name" class="form-control" value="<%= user.name %>">
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>

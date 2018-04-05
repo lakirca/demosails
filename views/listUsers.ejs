@@ -1,0 +1,28 @@
+<h1 class="display-4">Users</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach(function(user){ %>
+            <tr>
+                <td>
+                    <%= user.id %>
+                </td>
+                <td>
+                    <%= user.name %>
+                </td>
+                <td>
+                    <a href="/users/editUser/<%= user.id %>" class="btn btn-primary">Edit</a>
+                    <form class="d-inline" action="/users/delete/<%= user.id %>" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger">
+                    </form>
+                </td>
+            </tr>
+            <% }) %>
+    </tbody>
+</table>

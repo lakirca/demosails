@@ -1,0 +1,24 @@
+<h1 class="display-4">Posts</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% posts.forEach(function(post){ %>
+            <tr>
+                <td><%= post.id %></td>
+                <td><%= post.title %></td>
+                <td>
+                    <a href="/posts/edit/<%= post.id %>" class="btn btn-primary">Edit</a>
+                    <form class="d-inline" action="/posts/delete/<%= post.id %>" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger">
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
