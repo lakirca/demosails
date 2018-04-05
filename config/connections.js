@@ -35,20 +35,20 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
-  mongodb: {
-    adapter: 'sails-mongo',
-    host: 'localhost',
-    port: 27017,
-    //user: 'username', //optional
-    //password: 'password', //optional
-    database: 'postbase' //optional
-  },
- 
-  productionMongo: {
-    adapter: 'sails-mongo',
-    url: process.env.MONGODB_URI
-}
-,
+  //   mongodb: {
+  //     adapter: 'sails-mongo',
+  //     host: 'localhost',
+  //     port: 27017,
+  //     //user: 'username', //optional
+  //     //password: 'password', //optional
+  //     database: 'postbase' //optional
+  //   },
+
+  //   productionMongo: {
+  //     adapter: 'sails-mongo',
+  //     url: process.env.MONGODB_URI
+  // }
+  // ,
   /***************************************************************************
   *                                                                          *
   * PostgreSQL is another officially supported relational database.          *
@@ -58,10 +58,10 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
- heroku_postgrses:{
+  heroku_postgres: {
     adapter: 'sails-postgresql',
     url: process.env.DATABASE_URL,
-    ssl: false   
+    ssl: false
   }
 
   /***************************************************************************

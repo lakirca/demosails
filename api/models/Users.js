@@ -7,6 +7,5 @@ module.exports = {
       collection: 'posts',
       via: 'users'
     }
-  },
-  connection: 'heroku_postgres'
+  }
 };
