@@ -17,11 +17,12 @@ module.exports = {
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-   models: {
-    connection: 'heroku_postgres'
-     },
+  models: {
+    connection: 'heroku_postgres',
+    migrate: 'alter'
+  },
 
-     
+
   /***************************************************************************
    * Set the port in the production environment to 80                        *
    ***************************************************************************/

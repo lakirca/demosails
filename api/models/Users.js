@@ -8,5 +8,5 @@ module.exports = {
       via: 'users'
     }
   },
-  connection:'mongodb'
+  connection: 'heroku_postgres'
 };

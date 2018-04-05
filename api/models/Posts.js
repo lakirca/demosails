@@ -11,7 +11,7 @@ module.exports = {
       via: 'posts'
     }
   },
-  connection:'mongodb'
+  connection: 'heroku_postgres'
 };
 
 
